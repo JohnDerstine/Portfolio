@@ -1,0 +1,65 @@
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Tabs {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    Height: 75px;
+    width: 100%;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100%;
+}
+
+.InfoBox {
+    display: flex;
+    background: radial-gradient(white, rgba(117, 117, 117, 0.9));
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    border: 5px solid black;
+}
+
+.Header {
+    width: 100%;
+    margin: 24px;
+    display: flex;
+}
+
+.Header img{
+    float: left;
+    margin: 24px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.Header h1 {
+    align-self: center;
+    font-size: 64pt;
+}
+
+button {
+    font-family: Impact;
+    font-size: 14pt;
+    font-style: normal;
+    border-radius: 10px;
+    border: 3px solid black;
+    width: 150px;
+    height: 75%;
+    background: radial-gradient(white, rgb(105, 199, 43));
+    align-self: center;
+}
+
