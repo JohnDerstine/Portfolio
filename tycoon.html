@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Derstine's Portfolio</title>
+    <link rel="stylesheet" href="./tycoon.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body background="Images/Background.png">
+    <main>
+        <div class="Tabs">
+            <button onclick="location.href='./index.html'">About Me</button>
+            <button onclick="location.href='./work.html'">Work Experience</button>
+            <button onclick="location.href='./maze.html'">Maze Algorithm</button>
+            <button onclick="location.href='./towerDefense.html'">Tower Defense Project</button>
+            <button onclick="location.href='./tycoon.html'">Tycoon Project</button>
+        </div>
+        <div class="Container">
+            <div class="InfoBox">
+                <div class="Header">
+                    <h1>Tycoon Project</h1>
+                </div>
+                <div class="Text">
+                    <h2>Background</h2>
+
+                    <p>As stated in the Tower Defense project page, this project started with the intention of improving my knowledge of UI systems and implementation. When deciding on a theme for this
+                        project I wanted to do something that I was already familiar with. During highschool I tried out beekeeping as a hobby and I had taken courses on the subject. Since I had so 
+                        much background knowdledge on the subject I thought it would be a fun topic to explore. The first genre that came to mind when I tried imagining a game based on beekeeping was a
+                        tycoon-like game where you would manage colonies of bees, plant flowers, harvest honey, and sell it to acquire more bees and better equipment.
+                    </p>
+
+                    <p>I'm still in the somewhat early stages of development and while the backend systems and algorithms are set-up, the front-facing assets and controls are not in place. However,
+                        the core gameplay I had imagined involves designing the layout for your plot of land, setting up beehives, deiciding what types of flowers to plant, managing beehive development,
+                        harvesting and selling the honey, and purchasing upgrades and researching new techniques. I intend to introduce strategic elements through honey bee species. Different species
+                        will have different stats and tendencies. Different flowers will be more or less expensive, which will effect their respective honeys' sell price. One of the mechanics to add challenge
+                        to the game is hive health. Weather, diseases, and pests can all affect a hives health, and if not properlly managed the hive can die.
+                    </p>
+
+                    <h2>Challenges & Accomplishments</h2>
+                    <p>Because this project is still only in it's early stages, I only have 1 notable challenge to speak about, the hexagonal UI.
+                        Since the purpose of this project was to learn the ins and outs of UI implementation I wanted to get creative with my UI design and layout.
+                        To fit the theme of beekeeping I wanted to make the main purchasing menu hexagonal, but this came with some challenges. The first challenge was that visual elements 
+                        (Unity's basic UI building block) are square. If you make the background image of a visual element a hexagon, then click outside of the hexagon but inside the visual element,
+                        the visual element will still read the click. I needed a way to detect if the users click is within this transparent area outside the hexagon. To do this, I had to make a custom
+                        visual element class to override the click detecting method. My custom method checks to see if the pixel under the cursor is transparent, and if it is to disregard the click.
+                    </p>
+
+                    <p>The second challenge with this menu was creating new hexagon menu items during runtime, and aligning them with the menu tabs. The positioning aspect of the hexagons
+                        mostly came down to playing around with different float values and such. However, in the tower defense project, one of the last problems I had was with
+                        instatiating UI elements during runtime. The main issue came with screen-size scaling and how improper scaling would cause these runtime UI elements size and position
+                        to be inconsistent with those that were pre-placed. I ended up doing more research and forum scouring with a focus on UI scaling. After not finding my answer for days, I reconsidered
+                        my knowledge of basic scaling html scaling. As it turns out, this is where my problem was. I had a fundamental misunderstanding of how different units worked with different scaling modes in unity.
+                        I've always used percentages for making html elements take up the same amount of screen space on different screen sizes, but when using the 'Scale with Screen-size' scale mode
+                        in unity, this doesn't have the same effect. Since this scale mode applies a scaling ratio to all the elements to keep size consistant, this means that when you use 
+                        percentages to define the size of elements, you end up applying a ratio to a percentage, which breaks this scaling. Instead I needed to use pixels to define the dimensions of my elements.
+                        Looking back, it was probably bad habit to rely on percecntages so much and this should be an improvement to all my work moving forward. Ever since I've switched to using pixels, 
+                        I haven't been having any problems with proper element scaling and this long-term problem of mine seems solved.
+                    </p>
+
+                    <p>
+                        Here are some images to show what I have accomplished with this project so far:
+                    </p>
+
+                    <h2>The futrue</h2>
+                    <p> As of now, the big problems and gaps in my knowledge that were present before I started this project are gone. I have
+                        accomplished my goals of working with custom visual elements, fixing scaling issues, and creating interestive and unique UI layouts.
+                        Logically, now is the point where I would go back to my tower defense project and finish that. However, I have grown attached to the concept
+                        of this game and I want to see my new UI complete and working in tandum with gameplay. My new goal is to continue working on this project and have
+                        a minimum viable product ready before I graduate in May.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
