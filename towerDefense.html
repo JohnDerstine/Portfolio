@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./towerDefense.css">
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
   </head>
-  <body background="Images/Background.png">
+  <body>
     <main>
         <div class="Tabs">
             <button onclick="location.href='./index.html'">About Me</button>
@@ -47,16 +47,14 @@
                     </p>
 
                     <h2>Challenges</h2>
-                    <p>This project came with no shortage of challenges, but there are two in particular I want to mention: Pop movement and UI.</p>
-
-                    <p>When I first started implementing the pop movement I had decided to use an IEnumerator method since it could act as a queue
+                    <p>This project came with no shortage of challenges, but there are two in particular I want to mention: Pop movement and UI. When I first started implementing the pop movement I had decided to use an IEnumerator method since it could act as a queue
                         while also containing the code for moving the pop. In hindsight, this could have been done using the Update() method perfectly well, but I decided
                         at the time that I wanted to try doing it this way. I ended up running into a lot of issues with pop movement that were probably a result of this method,
                         and when I come back to this project I plan to do a rewrite of it to make it simpler and less bug-prone. I do think the solution I went with was very enjoyable to
                         make since I wasn't very familiar with IEnumerators at the time, and I still think there is a certain novelty to it.
                     </p>
 
-                    <img src="Images/PopTravel.png" />
+                    <img src="Images/PopTravel.png" id="Code"/>
 
                     <p>UI implementation was definitly my biggest challenge for this project. In the past I had made a small local-multiplayer card game with my friend,
                         and when I eventually got to the point where UI had to be implemented it was such a headache that I lost motivation to continue the project. Part of that
@@ -92,8 +90,18 @@
                         In order for me to keep moving forward with this project I feel I have to take a step back and improve my skills with UI.
                         This project has been a ton of fun and is the farthest I've ever taken a personal project, I'm looking forward to picking it back up.
                     </p>
+                    
+                    <h2>Project Images</h2>
+                </div>
+
+                <div class="Pictures">
+                    <img src="Images/FullView.png" width="550px" height="300px"/>
+                    <img src="Images/TowerMenu.png" width="200px" height="300px"/>
+                    <img src="Images/Enemies.png" width="250px" height="300px"/>
+                    <img src="Images/TowerPlacement.png" width="500px" height="300px"/>
                 </div>
             </div>
+
         </div>
     </main>
     <script src="main.js"></script>
