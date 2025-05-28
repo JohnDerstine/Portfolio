@@ -1,5 +1,240 @@
+@media screen and (max-width: 2000px) {
+    .Container {
+        margin-top: 150px;
+    }
+
+    .Text{
+        font-size: 12pt;
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    .Header h1 {
+        font-size: 72pt;
+    }
+
+    .Header {
+        margin-bottom: 48px;
+    }
+
+    .Floated{
+        width: 300px;
+        height: 425px;
+        border: 5px solid whitesmoke;
+        margin-left: 10px;
+        margin: 24px;
+    }
+
+    .Links {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Container {
+        margin-top: 125px;
+    }
+
+    .Text{
+        font-size: 10pt;
+        margin-left: 80px;
+    }
+
+    .Header h1 {
+        font-size: 64pt;
+    }
+
+    .Floated{
+        width: 250px;
+        height: 360px;
+    }
+
+    .Links {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Container {
+        margin-top: 100px;
+    }
+
+    .Text{
+        font-size: 10pt;
+        margin-left: 60px;
+    }
+
+    .Header h1 {
+        font-size: 56pt;
+    }
+
+    .Floated{
+        width: 200px;
+        height: 275px;
+        border: 4px solid whitesmoke;
+    }
+
+    .Links {
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Container {
+        margin-top: 80px;
+    }
+
+    .Text{
+        font-size: 8pt;
+        margin-left: 40px;
+    }
+
+    .Header h1 {
+        font-size: 44pt;
+    }
+
+    .Header {
+        margin-bottom: 36px;
+    }
+
+    .Floated{
+        width: 175px;
+        height: 240px;
+        margin-left: 10px;
+        margin: 16px;
+    }
+
+    .Links {
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Container {
+        margin-top: 60px;
+    }
+
+    .Text{
+        font-size: 8pt;
+        margin-left: 30px;
+    }
+
+    .Header h1 {
+        font-size: 36pt;
+    }
+
+    .Floated{
+        width: 150px;
+        height: 200px;
+    }
+
+    .Links {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Container {
+        margin-top: 50px;
+    }
+
+    .Text{
+        font-size: 7pt;
+        margin-left: 25px;
+    }
+
+    .Header h1 {
+        font-size: 32pt;
+    }
+
+    .Floated{
+        width: 125px;
+        height: 175px;
+    }
+
+    .Links {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .Container {
+        margin-top: 45px;
+    }
+
+    .Text{
+        font-size: 7pt;
+        margin-left: 20px;
+    }
+
+    .Header {
+        margin-bottom: 20px;
+    }
+
+    .Header h1 {
+        font-size: 28pt;
+    }
+
+    .Floated{
+        width: 100px;
+        height: 140px;
+        border: 3px solid whitesmoke;
+    }
+
+    .Links {
+        font-size: 7pt;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Container {
+        margin-top: 45px;
+    }
+
+    .Text{
+        font-size: 6pt;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .Header h1 {
+        font-size: 24pt;
+    }
+
+    .Floated{
+        width: 100px;
+        height: 140px;
+        margin-left: 0px;
+        margin: 12px;
+    }
+
+    .Links {
+        font-size: 6pt;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Container {
+        margin-top: 35px;
+    }
+
+    .Text{
+        font-size: 5pt;
+        width: 100%;
+    }
+
+    .Header h1 {
+        font-size: 20pt;
+    }
+
+    .Links {
+        font-size: 5pt;
+    }
+}
+
 html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
+    background-color: black;
 }
 
 body {
@@ -13,7 +248,7 @@ body {
 }
 
 .Tabs {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -21,10 +256,64 @@ body {
     width: 100%;
 }
 
+.DropdownContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    Height: 50px;
+    width: 100%;
+}
+
+.Item {
+    width: 100px;
+}
+
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #17981b;
+}
+
+.Dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.Icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
 .Container {
     display: flex;
     justify-content: center;
-    margin-top: 16vh;
     margin-bottom: 4vh;
     height: 100%;
 }
@@ -35,24 +324,29 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     width: 75%;
-    height: 100%;
     border: 10px solid rgb(0, 0, 0);
     border-radius: 8px;
-    margin-bottom: 50px;
+}
+
+.Floated{
+    float: right;
+    border-radius: 16px;
 }
 
 .Header {
-    width: 100%;
-    margin: 24px;
     display: flex;
-    gap: 14%;
+    flex-direction: column;
+}
+
+.Header h1 {
+    align-self: center;
+    margin-bottom: 0px;
+    color: white;
 }
 
 .Links {
-    position: absolute;
     color: lightblue;
-    top: 325px;
-    margin-left: 100px;
+    align-self: center;
 }
 
 .Links a:hover {
@@ -63,58 +357,36 @@ body {
     color: dodgerblue;
 }
 
-.Links a{
+.Links a {
     color: lightblue;
 }
 
 .Text {
-    font-size: 12pt;
     color: whitesmoke;
-    transform: translateY(-40%);
-    margin-left: 100px;
-    margin-bottom: -200px;
-    /* border: 5px solid whitesmoke;
-    border-radius: 16px; */
-    width: 57.5%;
 }
 
-.Text li{
+.Text li {
     padding-top: 8px;
 }
 
-.Text ul{
+.Text ul {
     padding-bottom: 20px;
 }
 
-.Text p{
+.Text p {
     padding: 10px;
     text-indent: 2.5em;
     line-height: 1.5em;
 }
 
-.Header img{
-    margin-top: 24px;
-    border-radius: 16px;
-    border: 5px solid whitesmoke;
-    transform: translateY(20%);
-    margin-bottom: -125px;
-}
-
-.Header h1 {
-    align-self: center;
-    font-size: 68pt;
-    color: white;
-    transform: translate(10%, -130%);
-}
-
 button {
+    background-color: rgba(0, 0, 0, 0);
     font-family: Impact;
     font-size: 14pt;
     font-style: normal;
     color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     border-style: none;
     align-self: center;
 }
