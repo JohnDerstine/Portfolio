@@ -1,3 +1,35 @@
+@media screen and (max-width: 6000px) {
+    .Container {
+        margin-top: 150px;
+    }
+
+    .Text{
+        font-size: 24pt;
+        margin-left: 200px;
+        width: 85%;
+    }
+
+    .Header h1 {
+        font-size: 128pt;
+    }
+
+    .Header {
+        margin-bottom: 48px;
+    }
+
+    .Links {
+        font-size: 20pt;
+    }
+
+    button {
+        font-size: 28pt;
+    }
+
+    .Tabs {
+        Height: 150px;
+    }
+}
+
 @media screen and (max-width: 2000px) {
     .Container {
         margin-top: 150px;
@@ -15,6 +47,15 @@
 
     .Header {
         margin-bottom: 48px;
+    }
+
+    
+    button {
+        font-size: 14pt;
+    }
+
+    .Tabs {
+        Height: 75px;
     }
 }
 
@@ -159,7 +200,6 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    Height: 75px;
 }
 
 .DropdownContainer {
@@ -264,7 +304,6 @@ body {
 
 button {
     font-family: Impact;
-    font-size: 14pt;
     font-style: normal;
     color: rgb(255, 255, 255);
     width: 100%;
