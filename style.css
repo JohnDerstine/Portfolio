@@ -60,7 +60,6 @@
     }
 
     .Text{
-        font-size: 10pt;
         margin-left: 60px;
     }
 
@@ -115,12 +114,7 @@
     }
 
     .Text{
-        font-size: 8pt;
         margin-left: 30px;
-    }
-
-    .Header h1 {
-        font-size: 36pt;
     }
 
     .Floated{
@@ -151,10 +145,6 @@
         width: 125px;
         height: 175px;
     }
-
-    .Links {
-        font-size: 8pt;
-    }
 }
 
 @media screen and (max-width: 455px) {
@@ -163,7 +153,6 @@
     }
 
     .Text{
-        font-size: 7pt;
         margin-left: 20px;
     }
 
@@ -187,10 +176,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .Container {
-        margin-top: 45px;
-    }
-
     .Text{
         font-size: 6pt;
         margin-left: 0px;
@@ -202,8 +187,6 @@
     }
 
     .Floated{
-        width: 100px;
-        height: 140px;
         margin-left: 0px;
         margin: 12px;
     }
@@ -220,7 +203,6 @@
 
     .Text{
         font-size: 5pt;
-        width: 100%;
     }
 
     .Header h1 {
@@ -253,7 +235,6 @@ body {
     width: 100%;
     justify-content: space-around;
     Height: 75px;
-    width: 100%;
 }
 
 .DropdownContainer {

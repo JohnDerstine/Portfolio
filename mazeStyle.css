@@ -1,31 +1,308 @@
+@media screen and (max-width: 2000px) {
+    .Container {
+        margin-top: 150px;
+    }
+
+    .Text{
+        font-size: 12pt;
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    .Header h1 {
+        font-size: 72pt;
+    }
+
+    .Header {
+        margin-bottom: 48px;
+    }
+
+    .Pictures {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    figcaption {
+        font-size: 9pt;
+    }
+
+    .gif {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Container {
+        margin-top: 125px;
+    }
+
+    .Text{
+        font-size: 10pt;
+        margin-left: 80px;
+    }
+
+    .Header h1 {
+        font-size: 64pt;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Container {
+        margin-top: 100px;
+    }
+
+    .Text{
+        margin-left: 60px;
+    }
+
+    .Header h1 {
+        font-size: 52pt;
+    }
+
+    .gif {
+        width: 180px;
+        height: 180px;
+    }
+
+    .Pictures {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    figcaption {
+        font-size: 8pt;
+    }
+
+    .gif {
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Container {
+        margin-top: 80px;
+    }
+
+    .Text{
+        font-size: 8pt;
+        margin-left: 40px;
+    }
+
+    .Header h1 {
+        font-size: 40pt;
+    }
+
+    .Header {
+        margin-bottom: 36px;
+    }
+
+    .gif {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Pictures {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Container {
+        margin-top: 60px;
+    }
+
+    .Text{
+        margin-left: 30px;
+    }
+
+    .Header h1 {
+        font-size: 34pt;
+    }
+
+    .gif {
+        width: 125px;
+        height: 125px;
+    }
+
+    .Pictures {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    figcaption {
+        font-size: 7pt;
+    }
+
+    .gif {
+        margin-left: 6px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Container {
+        margin-top: 50px;
+    }
+
+    .Text{
+        font-size: 7pt;
+        margin-left: 25px;
+    }
+
+    .Header h1 {
+        font-size: 28pt;
+    }
+
+    .gif {
+        width: 100px;
+        height: 100px;
+        margin-left: 0px;
+    }
+
+    figcaption {
+        font-size: 6pt;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .Container {
+        margin-top: 45px;
+    }
+
+    .Text{
+        margin-left: 20px;
+    }
+
+    .Header {
+        margin-bottom: 20px;
+    }
+
+    .Header h1 {
+        font-size: 24pt;
+    }
+
+    figcaption {
+        font-size: 5pt;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Text{
+        font-size: 6pt;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .Header h1 {
+        font-size: 20pt;
+    }
+
+    .gif {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Pictures {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Container {
+        margin-top: 35px;
+    }
+
+    .Text{
+        font-size: 5pt;
+    }
+
+    .Header h1 {
+        font-size: 16pt;
+    }
+}
+
 html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
+    background-color: black;
 }
 
 body {
-    height: 4000px;
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
     background-color: black;
     background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1) 21%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 1) 18%),
     url('Images/MazeLongView.png');
 }
 
 .Tabs {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     width: 100%;
     justify-content: space-around;
     Height: 75px;
+}
+
+.DropdownContainer {
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    Height: 50px;
+    width: 100%;
+}
+
+.Item {
+    width: 100px;
+}
+
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #17981b;
+}
+
+.Dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.Icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 
 .Container {
     display: flex;
     justify-content: center;
-    margin-top: 16vh;
     margin-bottom: 4vh;
 }
 
@@ -40,31 +317,35 @@ body {
     margin-bottom: 50px;
 }
 
+.FullWidth {
+    width: 100%;
+}
+
+.ThirdWidth {
+    margin-top: 15px;
+    width: 32%
+}
+
 .Pictures {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.Pictures img{
-    margin: 10px;
+    justify-content: space-between;
 }
 
 .Header {
-    width: 100%;
     display: flex;
-    gap: 14%;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.Header h1 {
+    align-self: center;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
 }
 
 .Text {
-    font-size: 12pt;
     color: whitesmoke;
-    margin-left: 100px;
-    /* border: 5px solid whitesmoke;
-    border-radius: 16px; */
-    width: 80%;
 }
 
 .Text li{
@@ -81,16 +362,17 @@ body {
     line-height: 1.5em;
 }
 
-.gif {
+figcaption {
+    position: relative;
     float: right;
-    margin: 10px;
+    align-self: center;
 }
 
-.Header h1 {
-    align-self: center;
-    font-size: 68pt;
-    color: white;
-    margin-left: 100px;
+figure {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
 
 button {
@@ -100,13 +382,13 @@ button {
     color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0);
     border-style: none;
     align-self: center;
 }
 
 button:hover {
-    background-color: rgba(0, 129, 28, .9);
+    background-color: rgba(0, 129, 28, 0.9);
 }
 
 button:active {

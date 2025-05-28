@@ -18,6 +18,19 @@
             <button onclick="location.href='./tycoon.html'">Tycoon Project</button>
         </div>
 
+        <div class="DropdownContainer">
+           <button class="Item" onclick="location.href='./index.html'"><img class="Icon" src="Images/icons8-home-48.png"/></button>
+           <div class="Dropdown">
+                <button class="dropbtn"><img class="Icon" src="Images/icons8-hamburger-50.png"/></button>
+                <div class="dropdown-content">
+                    <a href="./work.html">Work Experience</a>
+                    <a href="./maze.html">Maze Algorithm</a>
+                    <a href="./towerDefense.html">Tower Defense Project</a>
+                    <a href="./tycoon.html">Tycoon Project</a>
+                </div>
+            </div>
+        </div>
+
         <div class="Container">
             <div class="InfoBox">
                 <div class="Header">
@@ -26,7 +39,10 @@
                 <div class="Text">
                     <h2>Background</h2>
 
-                    <img class="gif" src="Images/WilsonMazeGenExample.gif"/>
+                    <figure>
+                        <img class="gif" src="Images/WilsonMazeGenExample.gif" onclick="location.href='./index.html'"/>
+                        <figcaption>Figure sourced from <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Wikipedia</a></figcaption>
+                    </figure>
                     <p>In the past I had tried to make a 3D maze algorithm, but failed to do so. During my third year of college, I felt like trying again and potentionally turning it into a game.
                         This time was much more successful as I had a clear idea in mind, whereas last time I just went in blind without researching any existing algorithms.
                         After looking through a bunch of maze algorithms, I decided on implementing Wilson's algorithm. I chose it because the outcome looked the most similiar to what I was
@@ -62,9 +78,9 @@
                         'parallel wall' on the other. I had to find a solution to this problem, that sorted the walls, but I didn't want a solution that was biased towards a direction or wall-type. So, here was
                         my solution:
                     </p>
-                    <img src="Images/SortWalls.png"/>
+                    <img src="Images/SortWalls.png" class="FullWidth"/>
                     <p> </p>
-                    <img src="Images/ReplaceWalls.png"/>
+                    <img src="Images/ReplaceWalls.png" class="FullWidth"/>
                     <p>I would save the type on both sides of the wall in dictionaries, saving the wall as the key, and the rotation for that side of the wall as the value.
                         I would then randomly choose a type of wall, grab the first wall out of the dictinary, replace it with the random type, and remove it from all other dictionaries.
                         This solution allows me to place a wall that makes sense in it's location, without favoring a type or direction.
@@ -85,10 +101,10 @@
                     <h2>Project Images</h2>
                 </div>
                 <div class="Pictures">
-                    <img src="Images/MazeDiagonalView.png" width="790px" height="400px"/>
-                    <img src="Images/Cracked Wall.png" width="200px" height="300px"/>
-                    <img src="Images/BrokenWall.png" width="250px" height="300px"/>
-                    <img src="Images/MazeTopDown.png" width="300px" height="300px"/>
+                    <img src="Images/MazeDiagonalView.png" class="FullWidth"/>
+                    <img src="Images/Cracked Wall.png" class="ThirdWidth"/>
+                    <img src="Images/BrokenWall.png" class="ThirdWidth"/>
+                    <img src="Images/MazeTopDown.png" class="ThirdWidth"/>
                 </div>
             </div>
         </div>

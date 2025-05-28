@@ -17,6 +17,20 @@
             <button onclick="location.href='./towerDefense.html'">Tower Defense Project</button>
             <button onclick="location.href='./tycoon.html'">Tycoon Project</button>
         </div>
+
+        <div class="DropdownContainer">
+           <button class="Item" onclick="location.href='./index.html'"><img class="Icon" src="Images/icons8-home-48.png"/></button>
+           <div class="Dropdown">
+                <button class="dropbtn"><img class="Icon" src="Images/icons8-hamburger-50.png"/></button>
+                <div class="dropdown-content">
+                    <a href="./work.html">Work Experience</a>
+                    <a href="./maze.html">Maze Algorithm</a>
+                    <a href="./towerDefense.html">Tower Defense Project</a>
+                    <a href="./tycoon.html">Tycoon Project</a>
+                </div>
+            </div>
+        </div>
+
         <div class="Container">
             <div class="InfoBox">
                 <div class="Header">
@@ -47,8 +61,8 @@
                         visual element class to override the click detecting method. My custom method checks to see if the pixel under the cursor is transparent, and if it is to disregard the click.
                     </p>
 
-                    <img class="Floated" src="Images/HiveTab.png" width="100px" height="300px"/>
-                    <img class="Floated" src="Images/BeeTab.png" width="100px" height="300px"/>
+                    <img class="FloatedRectangle" src="Images/HiveTab.png"/>
+                    <img class="FloatedRectangle" src="Images/BeeTab.png"/>
                     <p>The second challenge with this menu was creating new hexagon menu items during runtime, and aligning them with the menu tabs. The positioning aspect of the hexagons
                         mostly came down to playing around with different float values and such. However, in the tower defense project, one of the last problems I had was with
                         instatiating UI elements during runtime. The main issue came with screen-size scaling and how improper scaling would cause these runtime UI elements size and position
@@ -61,7 +75,7 @@
                         I haven't been having any problems with proper element scaling and this long-term problem of mine seems to be solved.
                     </p>
 
-                    <img class="Floated" src="Images/ProgressBar.png" width="150px" height="150px"/>
+                    <img class="FloatedSquare" src="Images/ProgressBar.png"/>
                     <p>A third challenge I encountered was with hexagonal progress bars. When designing the UI for the bee hives, I wanted to stick to the
                         hexagonal theme. In each hive there are number of settings, buttons, and information displayed. One piece of information the player needs to know
                         is how much comb/honey/nectar is in the hive. I thought that a creative way to display this would be with progress bars that are shaped to be hexagons.
@@ -71,8 +85,8 @@
                     </p>
 
                     <h2>Code Sample</h2>
-                    <img src="Images/CodePart1.png"/>
-                    <img src="Images/CodePart2.png"/>
+                    <img src="Images/CodePart1.png" class="FullWidth"/>
+                    <img src="Images/CodePart2.png" class="FullWidth"/>
 
                     <h2>The future</h2>
                     <p> As of now, the big problems and gaps in my knowledge that were present before I started this project are gone. I have
@@ -85,10 +99,10 @@
                 </div>
 
                 <div class="Pictures">
-                    <img src="Images/ChoiceScreen.png" width="820px" height="400px"/>
-                    <img src="Images/HiveUI.png" width="450px" height="250px"/>
-                    <img src="Images/Turn.png" width="350px" height="250px"/>
-                    <img src="Images/HoneyMarket.png" width="820px" height="400px"/>
+                    <img src="Images/ChoiceScreen.png" class="FullWidth"/>
+                    <img src="Images/HiveUI.png" class="TwoThirdWidth"/>
+                    <img src="Images/Turn.png" class="ThirdWidth"/>
+                    <img src="Images/HoneyMarket.png" class="FullWidth"/>
                 </div>
             </div>
         </div>
