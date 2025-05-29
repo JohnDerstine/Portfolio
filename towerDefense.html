@@ -43,26 +43,24 @@
                         I came up with the premise for the game and I would also be responsible for all the code, while <a href="https://www.linkedin.com/in/kevin-kershaw/">Kevin Kershaw</a>  would be responsible for the graphics, models, and
                         UI implementation. This quickly started to fall apart as Kevin didn't have the amount of time available that he expected and the UI would be left up to me in the future.
                         Kevin would continue to supply the models and art for me, and was still a major help on the project, despite his lack of time.
-                        The project has many stretch goals that would make it extremely unique in the Tower Defense genre, but the base gameplay is quite standard, with some twists here and there.
+                        The project has many stretch goals that would make it extremely unique in the Tower Defense genre, but the base gameplay is quite standard with some twists here and there.
                     </p>
 
-                    <p>The premise of the game is that you are a military architect for an expanding kingdom and you must design defenses for a new town that is being build. Waves of enemies will
-                        come to attack the townhall, and if it falls you fail. You can build defenses through resources you collect in the level. Wood, stone, and metal are scattered around
-                        and can be harvested through the appropriate method. Pops are the ones that harvest the resources under your command. By default you start out with 5 pops living in
-                        the townhall. These pops can be assigned to a logging camp to harvest wood which is done by removing trees that you designate. Using this wood
-                        you can build new camps to collect stone and metal, or build certain defensive towers like the archer tower. You must then assign pops to these towers to operate and
-                        stop the enemies from advancing. This is the core gameplay loop.
+                    <p>The premise of the game is that you are a military architect for an expanding kingdom and you must design defenses for a new town that is being built. Waves of enemies will
+                        come to attack the townhall, and if it falls you lose. You can build defenses through resources you collect in the level. Wood, stone, and metal are scattered around
+                        and can be harvested through the appropriate method. You will also have a limited number of pops to allocate to resources collection, building structures, and defending against invaders.
                     </p>
 
                     <h3>Disclaimer</h3>
                     <p>This project is currently at a minimum viable product state, where the core gameplay loop is implemented and can be played. 
-                        I have put this project on hiatus for the time being to work on the Tycoon project. As stated in the background of that project,
+                        I have put this project on hiatus for the time being to work on the <a href="/tycoon.html">tycoon project</a>. As stated in the background of that project,
                         the goal of it was to improve my knowledge of UI systems in unity and grow comfortable with them so that I can come
                         back to this project and make it the best it can be.
                     </p>
 
                     <h2>Challenges</h2>
-                    <p>This project came with no shortage of challenges, but there are two in particular I want to mention: Pop movement and UI. When I first started implementing the pop movement I had decided to use an IEnumerator method since it could act as a queue
+                    <p>This project came with no shortage of challenges, but there are two in particular I want to mention: Pop movement and UI. When I first started implementing 
+                        the pop movement I had decided to use an IEnumerator method since it could act as a queue
                         while also containing the code for moving the pop. In hindsight, this could have been done using the Update() method perfectly well, but I decided
                         at the time that I wanted to try doing it this way. I ended up running into a lot of issues with pop movement that were probably a result of this method,
                         and when I come back to this project I plan to do a rewrite of it to make it simpler and less bug-prone. I do think the solution I went with was very enjoyable to
