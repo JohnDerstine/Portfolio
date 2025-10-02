@@ -13,9 +13,9 @@
         <div class="Tabs">
             <button onclick="location.href='./index.html'">About Me</button>
             <button onclick="location.href='./work.html'">Work Experience</button>
-            <button onclick="location.href='./maze.html'">Maze Algorithm</button>
-            <button onclick="location.href='./towerDefense.html'">Tower Defense Project</button>
             <button onclick="location.href='./tycoon.html'">Beekeeping Game</button>
+            <button onclick="location.href='./towerDefense.html'">Tower Defense Project</button>
+            <button onclick="location.href='./maze.html'">Maze Algorithm</button>
         </div>
 
         <div class="DropdownContainer">
@@ -24,9 +24,9 @@
                 <button class="dropbtn"><img class="Icon" src="Images/icons8-hamburger-50.png"/></button>
                 <div class="dropdown-content">
                     <a href="./work.html">Work Experience</a>
-                    <a href="./maze.html">Maze Algorithm</a>
-                    <a href="./towerDefense.html">Tower Defense Project</a>
                     <a href="./tycoon.html">Beekeeping Game</a>
+                    <a href="./towerDefense.html">Tower Defense Project</a>
+                    <a href="./maze.html">Maze Algorithm</a>
                 </div>
             </div>
         </div>
@@ -78,9 +78,12 @@
                         'parallel wall' on the other. I had to find a solution to this problem, that sorted the walls, but I didn't want a solution that was biased towards a direction or wall-type. So, here was
                         my solution:
                     </p>
+                    <details>
+                    <summary style="color: green">Click to expand/collapse</summary>
                     <img src="Images/SortWalls.png" class="FullWidth"/>
                     <p> </p>
                     <img src="Images/ReplaceWalls.png" class="FullWidth"/>
+                    </details>
                     <p>I would save the type on both sides of the wall in dictionaries, saving the wall as the key, and the rotation for that side of the wall as the value.
                         I would then randomly choose a type of wall, grab the first wall out of the dictionary, replace it with the random type, and remove it from all other dictionaries.
                         This solution allows me to place a wall that makes sense in it's location, without favoring a type or direction.
